@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBAN Checker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+
+    <main class="d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4" style="width: 480px; background: linear-gradient(90deg, rgb(0, 0, 0) 0%, #242424 100%);">
+            <div class="card-body text-center text-white">
+                <h1 class="card-title mb-4">IBAN Checker</h1>
+                <div class="d-flex mb-3">
+                    <input type="text" id="iban" class="form-control me-2" placeholder="Type IBAN" style="width: 65%; height: 1cm;">
+                    <button class="btn btn-primary" onclick="GetIban()" style="width: 30%; height: 1cm;">Check IBAN</button>
+                </div>
+                <p class="result" id="result"></p>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Iban.js"></script>
+</body>
+
+</html>
